@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Обслуживание в Весне</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 48px;
+            padding: 40px 24px 48px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.2);
+            transition: 0.2s;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a2c3e;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 32px 0 20px;
+        }
+        .btn {
+            display: block;
+            padding: 18px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            border-radius: 60px;
+            text-decoration: none;
+            transition: 0.2s;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn-yes {
+            background: #1e7b4b;
+            color: white;
+            box-shadow: 0 4px 8px rgba(30,123,75,0.3);
+        }
+        .btn-yes:hover {
+            background: #146b3e;
+            transform: scale(1.02);
+        }
+        .btn-no {
+            background: #b91c1c;
+            color: white;
+            box-shadow: 0 4px 8px rgba(185,28,28,0.3);
+        }
+        .btn-no:hover {
+            background: #991b1b;
+            transform: scale(1.02);
+        }
+        .footer {
+            font-size: 14px;
+            color: #5d6f7f;
+            margin-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+        @media (max-width: 480px) {
+            .card { padding: 28px 20px 36px; }
+            h1 { font-size: 26px; }
+            .btn { padding: 15px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>✨ Вам понравилось обслуживание? ✨</h1>
+        <div class="buttons">
+            <a href="https://prodoctorov.ru/tver/lpu/81042-vesna/" class="btn btn-yes">✅ Да, всё отлично!<br><span style="font-size: 14px;">Оставить отзыв</span></a>
+            <a href="mailto:director@vesna-clinic.ru?subject=Обращение%20по%20качеству%20обслуживания&body=Здравствуйте, уважаемый руководитель!%0A%0AХочу сообщить о проблеме..." class="btn btn-no">❌ Нет, есть замечания<br><span style="font-size: 14px;">Написать руководителю</span></a>
+        </div>
+        <div class="footer">
+            📍 Ваше мнение важно для нас
+        </div>
+    </div>
+</body>
+</html>
